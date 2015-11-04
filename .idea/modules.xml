@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/WSO2Leaning.iml" filepath="$PROJECT_DIR$/WSO2Leaning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WSO2Learning/WSO2Learning.iml" filepath="$PROJECT_DIR$/WSO2Learning/WSO2Learning.iml" />
     </modules>
   </component>
 </project>
