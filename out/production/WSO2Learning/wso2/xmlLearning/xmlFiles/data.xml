@@ -1,0 +1,18 @@
+<?xml version="1.0"  ?>
+
+<PersonDetails>
+    <Person index="123">
+        <name>Irunika</name>
+        <age>23</age>
+    </Person>
+
+    <Person index="321">
+        <name>Lakmal</name>
+        <age>21</age>
+    </Person>
+
+    <Person index="143">
+        <name>Anusha</name>
+        <age>18</age>
+    </Person>
+</PersonDetails>
