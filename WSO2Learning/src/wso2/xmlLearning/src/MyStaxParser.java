@@ -59,16 +59,15 @@ public class MyStaxParser {
                         if(bAge){
                             System.out.println("Age : " + characters.getData());
                             bAge = false;
+                            System.out.println();
                         }
                         break;
 
                     case XMLStreamConstants.END_ELEMENT:
                         EndElement endElement = event.asEndElement();
-                        System.out.println();
+//                        System.out.println();
                         break;
                 }
-
-
             }
 
         } catch (FileNotFoundException e) {
