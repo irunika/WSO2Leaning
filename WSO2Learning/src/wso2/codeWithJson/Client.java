@@ -15,7 +15,12 @@ import java.util.Observable;
 import java.util.Scanner;
 
 /**
+ *
  * Created by irunika on 11/10/15.
+ * This is only a testing object and we can even use MongoDB with this to pass the data
+ * So any json object can be handled by here
+ * We simply have to convert this class to a MondoDB parser and i will work fine
+ *
  */
 public class Client{
 
