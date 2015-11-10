@@ -1,8 +1,10 @@
 package wso2.codeWithJson;
 
+import org.json.simple.JSONObject;
 import sun.tools.jar.CommandLine;
 
 import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.io.PrintStream;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
@@ -16,7 +18,11 @@ public class Server {
 
     public final static int port =  22000;
 
+
+
     public static void main(String[] args){
+
+        JsonObjects map = new JsonObjects();
         final int port = 22000;
 
         try {
@@ -28,10 +34,14 @@ public class Server {
                 System.out.println("Client is connected from " + s.getLocalAddress().getHostName() );
 
                 Scanner scan = new Scanner(s.getInputStream());
-                System.out.println(scan.nextLine());
 
-                PrintStream out = new PrintStream(s.getOutputStream());
-                out.println("Hi Client");
+                Integer request = scan.nextInt();
+
+                ObjectOutputStream out = new ObjectOutputStream(s.getOutputStream());
+                out.writeObject(map.getDetails(request));
+                System.out.println("Returned the details of " + request);
+
+                out.flush();
 
             }
         } catch (IOException e) {
